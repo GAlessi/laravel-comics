@@ -3,7 +3,7 @@
 header{
 
     .otherSites{
-        padding: 5px 10%;
+        padding: $padding10;
         background-color: $colorBlue;
 
         @include flex;
@@ -17,7 +17,7 @@ header{
     }
 
     nav{
-        padding: 10px 10%;
+        padding:$padding10;
         @include flex;
 
         #logo{
@@ -29,7 +29,6 @@ header{
             @include flex;
             justify-content: space-around;
             flex-grow: 1;
-            list-style: none;
             li{
                 font-weight: 600;
             }

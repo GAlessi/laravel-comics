@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     public function home(){
-        $nav = [
-            'CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'
-        ];
+
+        $nav = ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
 
         $data = [
             [

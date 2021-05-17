@@ -1,5 +1,5 @@
 header .otherSites {
-  padding: 5px 10%;
+  padding: 10px 10%;
   background-color: #4d8ce2;
   display: flex;
   justify-content: center;
@@ -31,7 +31,6 @@ header nav .navbarList {
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
-  list-style: none;
 }
 
 header nav .navbarList li {
@@ -47,8 +46,170 @@ header nav input {
 }
 
 .jumbotron {
-  height: 400px;
+  height: 300px;
   background-image: url("/storage/assets/jumbotron.jpg");
   background-size: cover;
+}
+
+main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  color: white;
+  margin: 10px 10%;
+}
+
+main .container .currentSeries {
+  background-color: #4d8ce2;
+  padding: 10px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+main .container .comics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+main .container .comics .comic {
+  width: calc(100%/6);
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+main .container .comics .comic .cover {
+  height: 150px;
+  width: 100%;
+}
+
+main .container .comics .comic .cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .container .button {
+  background-color: #4d8ce2;
+  padding: 10px 40px;
+}
+
+main .container .button:hover {
+  cursor: pointer;
+}
+
+main .merchandise {
+  background-color: #4d8ce2;
+  padding: 40px 10%;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .merchandise div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .merchandise div img {
+  height: 60px;
+  width: auto;
+}
+
+main .merchandise div span {
+  font-size: 12px;
+  margin-left: 5px;
+  color: white;
+}
+
+main .merchandise div:last-child img {
+  width: 50px;
+  height: auto;
+}
+
+footer .pre-footer {
+  background-image: url("/storage/assets/footer-bg.jpg");
+  background-size: cover;
+  padding: 0 10%;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
+
+footer .pre-footer .lists {
+  margin-top: 35px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .pre-footer .lists ul {
+  margin-bottom: 20px;
+}
+
+footer .pre-footer .lists ul li {
+  color: #a3a3a3;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+footer .pre-footer .lists ul li.title {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer .pre-footer .logo {
+  display: inline-block;
+  height: 100%;
+}
+
+footer .pre-footer .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: center;
+     object-position: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
 }
 

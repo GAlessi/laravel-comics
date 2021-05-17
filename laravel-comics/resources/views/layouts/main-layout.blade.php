@@ -9,9 +9,7 @@
 </head>
 <body>
     @include('components.header')
-    <div class="jumbotron">
-
-    </div>
+    <div class="jumbotron"></div>
     @yield('content')
     @include('components.footer')
 </body>

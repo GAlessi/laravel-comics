@@ -1,2 +1,13 @@
 @import "partials/header";
 @import "partials/main";
+@import"partials/footer";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
