@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 class TestController extends Controller
 {
     public function home(){
+        $nav = [
+            'CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'
+        ];
 
         $data = [
             [
@@ -223,6 +226,6 @@ class TestController extends Controller
         ];
 
 
-        return view('pages.home');
+        return view('pages.home', compact('nav','data'));
     }
 }

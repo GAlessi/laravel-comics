@@ -1,0 +1,48 @@
+header .otherSites {
+  padding: 5px 10%;
+  background-color: #4d8ce2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-size: 12px;
+}
+
+header .otherSites span {
+  margin-left: 30px;
+}
+
+header nav {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav #logo {
+  height: 50px;
+  width: auto;
+}
+
+header nav .navbarList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  list-style: none;
+}
+
+header nav .navbarList li {
+  font-weight: 600;
+}
+
+header nav input {
+  border: none;
+  border-bottom: 4px solid #4d8ce2;
+  text-align: right;
+  width: 100px;
+  font-size: 16px;
+}
+

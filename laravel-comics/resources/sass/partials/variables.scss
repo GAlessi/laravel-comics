@@ -1,0 +1,8 @@
+$colorBlue : rgb(77,140,226);
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};

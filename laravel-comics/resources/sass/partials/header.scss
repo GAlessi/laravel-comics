@@ -1,0 +1,46 @@
+@import "partials/variables";
+
+header{
+
+    .otherSites{
+        padding: 5px 10%;
+        background-color: $colorBlue;
+
+        @include flex;
+        justify-content: flex-end;
+        color: white;
+        font-size: 12px;
+
+        span{
+            margin-left: 30px;
+        }
+    }
+
+    nav{
+        padding: 10px 10%;
+        @include flex;
+
+        #logo{
+            height: 50px;
+            width: auto;
+
+        }
+        .navbarList{
+            @include flex;
+            justify-content: space-around;
+            flex-grow: 1;
+            list-style: none;
+            li{
+                font-weight: 600;
+            }
+        }
+
+        input{
+            border: none;
+            border-bottom: 4px solid $colorBlue;
+            text-align: right;
+            width: 100px;
+            font-size: 16px;
+        }
+    }
+}
