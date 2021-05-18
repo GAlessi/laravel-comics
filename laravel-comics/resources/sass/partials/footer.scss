@@ -23,7 +23,10 @@ footer{
             ul{
                 margin-bottom: 20px;
                 li{
-                    color: rgb(163, 163, 163);
+                    a{
+                        text-decoration: none;
+                        color: rgb(163, 163, 163);
+                    }
                     font-size: 12px;
                     line-height: 20px;
                 }
@@ -38,6 +41,7 @@ footer{
         .logo{
             display: inline-block;
             height: 100%;
+            margin-left: 100px;
 
             img{
                 width: 100%;

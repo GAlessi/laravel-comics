@@ -178,9 +178,13 @@ footer .pre-footer .lists ul {
 }
 
 footer .pre-footer .lists ul li {
-  color: #a3a3a3;
   font-size: 12px;
   line-height: 20px;
+}
+
+footer .pre-footer .lists ul li a {
+  text-decoration: none;
+  color: #a3a3a3;
 }
 
 footer .pre-footer .lists ul li.title {
@@ -192,6 +196,7 @@ footer .pre-footer .lists ul li.title {
 footer .pre-footer .logo {
   display: inline-block;
   height: 100%;
+  margin-left: 100px;
 }
 
 footer .pre-footer .logo img {

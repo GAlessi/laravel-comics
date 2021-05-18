@@ -9,7 +9,32 @@ class TestController extends Controller
     public function home(){
 
         $nav = ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
-
+        $footer = [
+            [
+                "title"=> "DC COMICS",
+                "links"=>[
+                    "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"
+                ]
+            ],
+            [
+                "title"=> "SHOP",
+                "links"=>[
+                    "Shop DC", "Shop DC Collectibles"
+                ]
+            ],
+            [
+                "title"=> "DC",
+                "links"=>[
+                    "Terms of Use", "Privacy policy(New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshop", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"
+                ]
+            ],
+            [
+                "title"=> "SITES",
+                "links"=>[
+                    "DC", "Mad Magazine", "DC Kids", "DC Universe", "DC Power Visa"
+                ]
+            ]
+        ];
         $data = [
             [
                 "title" => "Action Comics #1000: The Deluxe Edition",
@@ -225,6 +250,6 @@ class TestController extends Controller
         ];
 
 
-        return view('pages.home', compact('nav','data'));
+        return view('pages.home', compact('nav','data', "footer"));
     }
 }
