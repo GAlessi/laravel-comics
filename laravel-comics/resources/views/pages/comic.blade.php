@@ -8,7 +8,7 @@
             <img src="{{$elem['thumb']}}" alt="">
         </div>
 
-        <div class="row">
+        <div class="rowSales">
 
             <div class="sale">
                 <h3>{{$elem['title']}}</h3>
@@ -34,6 +34,57 @@
                 <h5>ADVERTISEMENT</h5>
                 <img src="{{ asset('/storage/assets/adv.jpg') }}">
             </div>
+        </div>
+        <div class="rowInfo">
+            <div class="container talent">
+
+                <div class="box">
+                    <h4>Talent</h4>
+                </div>
+                <div class="box">
+                    <span>Art by:</span>
+                    <span class="content">
+                        @foreach ($elem['artists'] as $artist)
+                            {{$artist}},
+                        @endforeach
+                    </span>
+                </div>
+                <div class="box">
+                    <span>Written by:</span>
+                    <span class="content">
+                        @foreach ($elem['writers'] as $writer)
+                            {{$writer}},
+                        @endforeach
+                    </span>
+                </div>
+
+            </div>
+            <div class="container specs">
+
+                <div class="box">
+                    <h4>Specs</h4>
+                </div>
+                <div class="box">
+                    <span>Series:</span>
+                    <span class="content">
+                        {{$elem['series']}}
+                    </span>
+                </div>
+                <div class="box">
+                    <span>U.S. Price:</span>
+                    <span class="info">
+                        {{$elem['price']}}
+                    </span>
+                </div>
+                <div class="box">
+                    <span>On sale date:</span>
+                    <span class="info">
+                        {{$elem['sale_date']}}
+                    </span>
+                </div>
+
+            </div>
+
         </div>
     </main>
 

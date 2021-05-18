@@ -170,14 +170,14 @@ main.comic .imgBar img {
   width: auto;
 }
 
-main.comic .row {
+main.comic .rowSales {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 20%;
 }
 
-main.comic .row .sale {
+main.comic .rowSales .sale {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,11 +187,11 @@ main.comic .row .sale {
   padding: 10px;
 }
 
-main.comic .row .sale h3 {
+main.comic .rowSales .sale h3 {
   text-transform: uppercase;
 }
 
-main.comic .row .sale .greenBar {
+main.comic .rowSales .sale .greenBar {
   flex-grow: 1;
   background-color: #35c438;
   display: flex;
@@ -203,7 +203,7 @@ main.comic .row .sale .greenBar {
   margin: 10px 0;
 }
 
-main.comic .row .sale .greenBar .price {
+main.comic .rowSales .sale .greenBar .price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,29 +213,70 @@ main.comic .row .sale .greenBar .price {
   padding: 0 10px;
 }
 
-main.comic .row .sale .greenBar .check {
+main.comic .rowSales .sale .greenBar .check {
   padding: 0 10px;
 }
 
-main.comic .row .sale .greenBar span {
+main.comic .rowSales .sale .greenBar span {
   color: #74d76a;
 }
 
-main.comic .row .sale .greenBar .white {
+main.comic .rowSales .sale .greenBar .white {
   color: white;
 }
 
-main.comic .row .sale p {
+main.comic .rowSales .sale p {
   font-size: 12px;
   line-height: 18px;
 }
 
-main.comic .row .adv {
+main.comic .rowSales .adv {
   text-align: right;
 }
 
-main.comic .row .adv img {
+main.comic .rowSales .adv img {
   width: 200px;
+}
+
+main.comic .rowInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding: 50px 20%;
+  background-color: lightgrey;
+}
+
+main.comic .rowInfo .container {
+  width: 50%;
+}
+
+main.comic .rowInfo .container .box {
+  border-bottom: 1px solid grey;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+
+main.comic .rowInfo .container .box:first-child {
+  padding: 20px 0;
+}
+
+main.comic .rowInfo .container .box span {
+  font-size: 10px;
+}
+
+main.comic .rowInfo .container .box .content {
+  width: 70%;
+  color: #0c7cec;
+}
+
+main.comic .rowInfo .container .box .info {
+  width: 70%;
 }
 
 footer .pre-footer {
