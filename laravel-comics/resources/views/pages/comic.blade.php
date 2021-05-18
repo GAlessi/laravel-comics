@@ -45,7 +45,7 @@
                     <span>Art by:</span>
                     <span class="content">
                         @foreach ($elem['artists'] as $artist)
-                            {{$artist}},
+                            {{$artist}}{{ $loop->last ? '.' : ',' }}
                         @endforeach
                     </span>
                 </div>
@@ -53,7 +53,7 @@
                     <span>Written by:</span>
                     <span class="content">
                         @foreach ($elem['writers'] as $writer)
-                            {{$writer}},
+                            {{$writer}}{{ $loop->last ? '.' : ',' }}
                         @endforeach
                     </span>
                 </div>
@@ -85,6 +85,27 @@
 
             </div>
 
+        </div>
+        <div class="barLink">
+            <div class="empty"></div>
+            <div class="full">
+                <span>DIGITAL COMICS</span>
+                <div class="icon"></div>
+            </div>
+            <div class="full">
+                <span> SHOP DC</span>
+                <div class="icon"></div>
+            </div>
+            <div class="full">
+                <span>COMIC SHOP LOCATOR</span>
+                <div class="icon"></div>
+            </div>
+            <div class="full">
+                <span>SUBSCRIPTIONS</span>
+                <div class="icon"></div>
+            </div>
+
+            <div class="empty"></div>
         </div>
     </main>
 

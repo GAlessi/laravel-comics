@@ -218,7 +218,7 @@ main.comic .rowSales .sale .greenBar .check {
 }
 
 main.comic .rowSales .sale .greenBar span {
-  color: #74d76a;
+  color: #c1efbd;
 }
 
 main.comic .rowSales .sale .greenBar .white {
@@ -244,7 +244,7 @@ main.comic .rowInfo {
   align-items: center;
   align-items: flex-start;
   padding: 50px 20%;
-  background-color: lightgrey;
+  background-color: #f8f8f8;
 }
 
 main.comic .rowInfo .container {
@@ -252,7 +252,7 @@ main.comic .rowInfo .container {
 }
 
 main.comic .rowInfo .container .box {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #e5dddd;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -277,6 +277,51 @@ main.comic .rowInfo .container .box .content {
 
 main.comic .rowInfo .container .box .info {
   width: 70%;
+}
+
+main.comic .rowInfo .specs .content {
+  text-transform: uppercase;
+}
+
+main.comic .barLink {
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5dddd;
+  border-bottom: 1px solid #e5dddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.comic .barLink:last-child .full {
+  border-right: 1px solid #e5dddd;
+}
+
+main.comic .barLink .full {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  border-left: 1px solid #e5dddd;
+}
+
+main.comic .barLink .full span {
+  font-size: 9px;
+  font-weight: 800;
+  color: #aeaaaa;
+}
+
+main.comic .barLink .full .icon {
+  width: 20px;
+  height: 30px;
+  background-color: #aeaaaa;
+}
+
+main.comic .barLink .empty {
+  flex-grow: 1;
 }
 
 footer .pre-footer {

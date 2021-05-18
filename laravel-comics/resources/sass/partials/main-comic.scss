@@ -54,7 +54,7 @@ main.comic{
                 }
 
                 span{
-                    color: rgb(116,215,106);
+                    color: rgb(193 239 189);
                 }
                 .white{
                     color: white;
@@ -77,13 +77,13 @@ main.comic{
         @include flex;
         align-items: flex-start;
         padding: 50px 20%;
-        background-color: lightgrey;
+        background-color: rgb(248 248 248);
 
         .container{
             width: 50%;
 
             .box{
-                border-bottom: 1px solid grey;
+                border-bottom: 1px solid rgb(229 221 221);;
                 padding: 10px 0;
                 @include flex;
                 justify-content: space-between;
@@ -106,7 +106,47 @@ main.comic{
                 }
             }
         }
+        .specs{
+            .content{
+                text-transform: uppercase;
+            }
+        }
 
 
+    }
+    .barLink{
+        background-color: rgb(248 248 248);
+        border-top: 1px solid rgb(229 221 221);
+        border-bottom: 1px solid rgb(229 221 221);
+        @include flex;
+
+        &:last-child{
+            .full{
+                border-right: 1px solid rgb(229 221 221);
+            }
+        }
+        .full{
+            width: 15%;
+            height: 100%;
+            @include flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px;
+            border-left: 1px solid rgb(229 221 221);
+
+            span{
+                font-size: 9px;
+                font-weight: 800;
+                color: rgb(174 170 170);
+            }
+            .icon{
+                width: 20px;
+                height: 30px;
+                background-color: rgb(174 170 170);
+            }
+        }
+        .empty{
+            flex-grow: 1;
+        }
     }
 }
