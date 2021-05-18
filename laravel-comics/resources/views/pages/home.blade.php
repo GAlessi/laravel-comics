@@ -1,6 +1,6 @@
 @extends('layouts.main-layout')
 @section('content')
-    <main>
+    <main class="home">
 
         <div class="container">
 
@@ -8,12 +8,12 @@
 
             <ul class="comics">
                 @foreach ($data as $comic)
-                    <li class="comic">
+                    <li class="comic"><a href="{{ route('comic', $loop->index) }}">
                         <div class="cover">
                             <img src="{{$comic['thumb']}}" alt="">
                         </div>
                         <h4>{{$comic['series']}}</h4>
-                    </li>
+                    </a></li>
                 @endforeach
 
             </ul>

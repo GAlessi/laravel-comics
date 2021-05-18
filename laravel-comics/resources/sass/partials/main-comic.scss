@@ -1,0 +1,76 @@
+@import "partials/variables";
+
+main.comic{
+
+    .imgBar{
+
+        height: 50px;
+        background-color: $colorBlue;
+        position: relative;
+
+        img{
+            position: absolute;
+            bottom: 20px;
+            left: 20%;
+            height: 200px;
+            width: auto;
+        }
+    }
+
+    .row{
+        @include flex;
+        padding: 50px 20%;
+
+
+        .sale{
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            padding: 10px;
+
+            h3{
+                text-transform: uppercase;
+            }
+            .greenBar{
+                flex-grow: 1;
+                background-color:rgb(53,196,56);
+                @include flex;
+                border-bottom: 1px solid black;
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+
+                .price{
+                    @include flex;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    border-right: 1px solid black;
+                    padding: 0 10px;
+
+                }
+                .check {
+                    padding: 0 10px;
+                }
+
+                span{
+                    color: rgb(116,215,106);
+                }
+                .white{
+                    color: white;
+                }
+            }
+            p{
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+        }
+        .adv{
+            text-align: right;
+            img{
+                width: 200px;
+            }
+        }
+    }
+}

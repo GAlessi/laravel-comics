@@ -1,6 +1,6 @@
 header .otherSites {
   padding: 10px 10%;
-  background-color: #4d8ce2;
+  background-color: #0c7cec;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ header nav .navbarList li {
 
 header nav input {
   border: none;
-  border-bottom: 4px solid #4d8ce2;
+  border-bottom: 4px solid #0c7cec;
   text-align: right;
   width: 100px;
   font-size: 16px;
@@ -51,7 +51,7 @@ header nav input {
   background-size: cover;
 }
 
-main {
+.home {
   background-color: black;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@ main {
   flex-direction: column;
 }
 
-main .container {
+.home .container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -70,15 +70,15 @@ main .container {
   margin: 10px 10%;
 }
 
-main .container .currentSeries {
-  background-color: #4d8ce2;
+.home .container .currentSeries {
+  background-color: #0c7cec;
   padding: 10px;
   position: absolute;
   top: -30px;
   left: 0;
 }
 
-main .container .comics {
+.home .container .comics {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,18 +89,19 @@ main .container .comics {
   margin-top: 50px;
 }
 
-main .container .comics .comic {
+.home .container .comics .comic {
   width: calc(100%/6);
   padding: 0 20px;
   margin-bottom: 20px;
 }
 
-main .container .comics .comic .cover {
+.home .container .comics .comic .cover {
   height: 150px;
   width: 100%;
+  margin-bottom: 15px;
 }
 
-main .container .comics .comic .cover img {
+.home .container .comics .comic .cover img {
   width: 100%;
   height: 100%;
   -o-object-fit: none;
@@ -109,17 +110,21 @@ main .container .comics .comic .cover img {
      object-position: top;
 }
 
-main .container .button {
-  background-color: #4d8ce2;
+.home .container .comics .comic a {
+  color: white;
+}
+
+.home .container .button {
+  background-color: #0c7cec;
   padding: 10px 40px;
 }
 
-main .container .button:hover {
+.home .container .button:hover {
   cursor: pointer;
 }
 
-main .merchandise {
-  background-color: #4d8ce2;
+.home .merchandise {
+  background-color: #0c7cec;
   padding: 40px 10%;
   width: 100%;
   margin-top: 10px;
@@ -129,43 +134,129 @@ main .merchandise {
   justify-content: space-around;
 }
 
-main .merchandise div {
+.home .merchandise div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .merchandise div img {
+.home .merchandise div img {
   height: 60px;
   width: auto;
 }
 
-main .merchandise div span {
+.home .merchandise div span {
   font-size: 12px;
   margin-left: 5px;
   color: white;
 }
 
-main .merchandise div:last-child img {
+.home .merchandise div:last-child img {
   width: 50px;
   height: auto;
 }
 
+main.comic .imgBar {
+  height: 50px;
+  background-color: #0c7cec;
+  position: relative;
+}
+
+main.comic .imgBar img {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  height: 200px;
+  width: auto;
+}
+
+main.comic .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20%;
+}
+
+main.comic .row .sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+main.comic .row .sale h3 {
+  text-transform: uppercase;
+}
+
+main.comic .row .sale .greenBar {
+  flex-grow: 1;
+  background-color: #35c438;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+main.comic .row .sale .greenBar .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  border-right: 1px solid black;
+  padding: 0 10px;
+}
+
+main.comic .row .sale .greenBar .check {
+  padding: 0 10px;
+}
+
+main.comic .row .sale .greenBar span {
+  color: #74d76a;
+}
+
+main.comic .row .sale .greenBar .white {
+  color: white;
+}
+
+main.comic .row .sale p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+main.comic .row .adv {
+  text-align: right;
+}
+
+main.comic .row .adv img {
+  width: 200px;
+}
+
 footer .pre-footer {
   background-image: url("/storage/assets/footer-bg.jpg");
-  background-size: cover;
+  background-size: 110%;
   padding: 0 10%;
   color: white;
   display: inline-block;
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: flex;
 }
 
-footer .pre-footer .lists {
-  margin-top: 35px;
+footer .pre-footer .texts {
   width: 40%;
   height: 100%;
+}
+
+footer .pre-footer .texts .lists {
+  margin-top: 35px;
+  height: 280px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -173,29 +264,35 @@ footer .pre-footer .lists {
   flex-wrap: wrap;
 }
 
-footer .pre-footer .lists ul {
+footer .pre-footer .texts .lists ul {
   margin-bottom: 20px;
 }
 
-footer .pre-footer .lists ul li {
+footer .pre-footer .texts .lists ul li {
   font-size: 12px;
   line-height: 20px;
 }
 
-footer .pre-footer .lists ul li a {
-  text-decoration: none;
+footer .pre-footer .texts .lists ul li a {
   color: #a3a3a3;
 }
 
-footer .pre-footer .lists ul li.title {
+footer .pre-footer .texts .lists ul li.title {
   color: white;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
+footer .pre-footer .texts p {
+  font-size: 12px;
+}
+
+footer .pre-footer .texts a {
+  color: #0c7cec;
+}
+
 footer .pre-footer .logo {
   display: inline-block;
-  height: 100%;
   margin-left: 100px;
 }
 
@@ -208,6 +305,39 @@ footer .pre-footer .logo img {
      object-position: center;
 }
 
+footer .socials {
+  background-color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+footer .socials > a {
+  border: 3px solid #0c7cec;
+}
+
+footer .socials > a h4 {
+  color: white;
+  padding: 10px;
+}
+
+footer .socials .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .socials .icons li {
+  margin-left: 10px;
+}
+
+footer .socials .icons H3 {
+  color: #0c7cec;
+  margin-right: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -216,5 +346,9 @@ footer .pre-footer .logo img {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 

@@ -1,5 +1,6 @@
 @import "partials/header";
-@import "partials/main";
+@import "partials/main-home";
+@import "partials/main-comic";
 @import"partials/footer";
 
 *{
@@ -10,4 +11,8 @@
 
 ul{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
